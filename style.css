@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body
+{
+    background-color: aliceblue;
+}
+.wrapper
+{
+    width: 100vw;
+    height: 100%;
+}
+.mega-menu
+{
+    height: 60px;
+}
+.mega-menu ul
+{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+}
+.mega-menu ul li
+{
+    margin: 0 15px;
+    padding: 0 15px;
+    display: inline-block;
+}
+.mega-menu ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+}
+.mega-menu ul li .sub-menu
+{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #2f2f2f;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 24px;
+    visibility: hidden;
+}
+.mega-menu ul li:hover
+{
+    background: #2f2f2f;
+}
+.mega-menu ul li a:hover
+{
+    color: #ca914e;
+}
+.mega-menu ul li:hover .sub-menu
+{
+    visibility: visible;
+}
+.mega-menu ul li .sub-menu .col img
+{
+    width: 400px;
+    height: 280px;
+}
+.mega-menu ul li .sub-menu .col p
+{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: left;
+    margin-left: 22px;
+    /* letter-spacing: 2px; */
+}
